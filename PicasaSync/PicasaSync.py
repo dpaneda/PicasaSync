@@ -30,7 +30,7 @@ except ImportError:
 	raise SystemExit('Error importing the dateutil module. In debian/ubuntu you can install it by doing "sudo apt-get install python-dateutil"')
 
 try:
-	import Image
+	from PIL import Image
 except ImportError:
 	raise SystemExit('Error importing the Image module. In debian/ubuntu you can install it by doing "sudo apt-get install python-imaging"')
 
@@ -417,7 +417,7 @@ class Album(dict):
 			self.LOG.error(u'Error deleting album "{}": '.format(self.title) + str(e))
 		finally:
 			self.picasa = None
-	
+
 	def sync(self):
 		root = self.cl_args.paths[0]
 

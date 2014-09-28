@@ -17,7 +17,7 @@ setup(
     keywords = "picasa sync photo album",
     url = "http://github.com/placidorevilla/PicasaSync",
     packages = ['PicasaSync'],
-    install_requires = ['googlecl', 'python-dateutil', 'PIL'],
+    install_requires = ['googlecl', 'python-dateutil', 'pillow'],
     long_description = read('README'),
     classifiers = [
         "Development Status :: 3 - Alpha",
